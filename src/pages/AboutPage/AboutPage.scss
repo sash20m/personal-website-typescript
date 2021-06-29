@@ -1,0 +1,57 @@
+@import '../../styles/palette.scss', '../../styles/typography.scss',
+  '../../styles/helpers.scss';
+
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+      width: 400px;
+      height: 520px;
+      object-fit: cover;
+      margin-right: 37px;
+      border-radius: 6px;
+      background-color: $border;
+    }
+
+    &__photos {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      &__img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 6px;
+        background-color: $border;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .about-me {
+    margin-left: 37px;
+    @include SFProRegular;
+    font-size: rem(20px);
+    color: $blackPrimary;
+
+    &__p {
+      width: 430px;
+      margin-bottom: 20px;
+    }
+  }
+}

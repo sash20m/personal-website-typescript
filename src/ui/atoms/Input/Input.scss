@@ -1,0 +1,30 @@
+@import '../../../styles/typography.scss', '../../../styles/helpers.scss',
+  '../../../styles/palette.scss';
+
+.input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid $border;
+  box-sizing: border-box;
+  border-radius: 6px;
+  @include SFProRegular;
+  color: $blackPrimary;
+  padding-left: 20px;
+  font-size: rem(16px);
+
+  &:focus {
+    outline-color: $primaryBlue;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: $textPrimary;
+  font-size: rem(14px);
+  @include SFProRegular;
+}
+
+.input-invalid {
+  border: 1px solid rgb(197, 40, 40);
+}

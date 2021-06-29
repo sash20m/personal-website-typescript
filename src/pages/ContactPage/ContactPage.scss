@@ -1,0 +1,39 @@
+@import '../../styles/typography.scss', '../../styles/palette.scss',
+  '../../styles/helpers.scss';
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    min-width: 600px;
+    max-width: 980px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    &__title {
+      @include SFProRegular;
+      color: $blackPrimary;
+      font-size: rem(20px);
+      margin-bottom: 20px;
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: row;
+
+      div {
+        width: 100%;
+      }
+    }
+
+    textarea {
+      min-height: 150px;
+    }
+  }
+}

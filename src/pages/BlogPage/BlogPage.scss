@@ -1,0 +1,96 @@
+@import '../../styles/typography.scss', '../../styles/palette.scss',
+  '../../styles/helpers.scss';
+
+.blog {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__posts {
+    display: flex;
+    flex-direction: column;
+
+    &__add-btn {
+      width: 100px;
+      margin-bottom: 15px;
+    }
+
+    &__posts-grid {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      div {
+        margin-right: 43px;
+
+        &:nth-child(3n) {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+
+  &__twitter-posts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+
+    &__title {
+      @include SFProRegular;
+      font-size: rem(20px);
+      color: $blackPrimary;
+      margin-bottom: 20px;
+    }
+
+    &__tweets {
+      display: flex;
+      flex-direction: column;
+
+      .post {
+        width: 263px;
+        min-height: 136px;
+        background-color: white;
+        border: 1px solid $border;
+        border-radius: 6px;
+
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        .header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          &__avatar {
+            background-color: #ddd;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-top: 17px;
+            margin-left: 17px;
+            margin-bottom: 17px;
+          }
+
+          &__name {
+            font-size: rem(16px);
+            color: $blackPrimary;
+            @include SFProRegular;
+            margin-left: 15px;
+          }
+        }
+
+        .post-text {
+          font-size: rem(15px);
+          @include SFProRegular;
+          color: $textPrimary;
+          margin-left: 17px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}

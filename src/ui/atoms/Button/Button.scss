@@ -1,0 +1,31 @@
+@import '../../../styles/typography.scss', '../../../styles/helpers.scss',
+  '../../../styles/palette.scss';
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 120px;
+  height: 44px;
+  background-color: $primaryBlue;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 22px;
+  padding-right: 22px;
+  color: white;
+  border: none;
+  @include SFProRegular;
+  font-size: rem(18px);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  p {
+    color: white;
+    @include SFProRegular;
+    font-size: rem(18px);
+  }
+}

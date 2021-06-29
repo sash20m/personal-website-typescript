@@ -1,0 +1,31 @@
+@import '../../../../styles/typography.scss', '../../../../styles/palette.scss';
+
+.post-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 35px;
+  min-width: 90px;
+  padding: 7px;
+  background-color: white;
+  border: 1px solid $border;
+  border-radius: 3px;
+  @include SFProLight;
+  color: $blackPrimary;
+  font-size: rem(16px);
+  margin-right: 10px;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  div {
+    margin-right: 3px;
+  }
+
+  &__icon {
+    margin-right: 7px;
+    outline: none;
+  }
+}

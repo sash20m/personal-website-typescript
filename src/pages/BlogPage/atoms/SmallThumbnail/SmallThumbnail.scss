@@ -1,0 +1,27 @@
+@import '../../../../styles/typography.scss', '../../../../styles/palette.scss',
+  '../../../../styles/helpers.scss';
+
+.small-thumbnail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__cover-container {
+    width: 250px;
+    height: 162px;
+    background-color: #ddd;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: rem(20px);
+    @include SFProBold;
+    color: $blackPrimary;
+    margin-top: 15px;
+  }
+}
