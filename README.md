@@ -2,28 +2,20 @@
 This website is for the students from the React Masterclass. It is the finished project that you can verify you code with.
 
 # .env
+```
 REACT_APP_API_URL=https://alexmatei.tech/api
-
 REACT_APP_WEBSITE_URL=
 
-
 REACT_APP_TWITTER_API_TOKEN=
-
 REACT_APP_TWITTER_PROFILE=
-
 REACT_APP_TWEETS_MAXIMUM_NUMBER=5
 
-
 REACT_APP_LINKEDIN_URL=
-
 REACT_APP_TWITTER_URL=
-
 REACT_APP_FACEBOOK_URL=
-
 REACT_APP_INSTAGRAM_URL=
-
 REACT_APP_GITHUB_URL=
-
+```
 
 ## Available Scripts
 
