@@ -2,7 +2,7 @@
 This website is for the students from the React Masterclass. It is the finished project that you can verify you code with.
 
 # .env
-REACT_APP_API_URL=https://alexmatei.tech/api
+REACT_APP_API_URL=https://alexmatei.tech/api\
 REACT_APP_WEBSITE_URL=http://localhost:3000
 
 REACT_APP_TWITTER_API_TOKEN=
