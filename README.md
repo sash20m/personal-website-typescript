@@ -1,5 +1,5 @@
 # About
-This website is for the students from the React Masterclass. It is the finished project that you can verify you code with.
+This website is for the students from the React Masterclass. It is the finished project that you can verify your code with.
 
 # .env
 ```
